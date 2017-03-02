@@ -6,7 +6,7 @@
 #
 # Downloads and configures the following:
 #
-#   Java JDK
+#   Java JDK - Removido nao necessario
 #   Apache Ant
 #   Android
 #   NPM
@@ -97,13 +97,14 @@ export PATH=$PATH:$NODE_PATH/bin
 export PATH=$PATH:$GRADLE_PATH/bin
 
 # Install JDK and Apache Ant
-apt-get -qq -y install default-jdk ant
+#apt-get -qq -y install default-jdk ant
+apt-get install ant 
 
 # Set JAVA_HOME based on the default OpenJDK installed
-export JAVA_HOME="$(find /usr -type l -name 'default-java')"
-if [ "$JAVA_HOME" != "" ]; then
-    echo "export JAVA_HOME=$JAVA_HOME" >> ".profile"
-fi
+#export JAVA_HOME="$(find /usr -type l -name 'default-java')"
+#if [ "$JAVA_HOME" != "" ]; then
+#    echo "export JAVA_HOME=$JAVA_HOME" >> ".profile"
+#fi
 
 # Install Apache Cordova and Ionic Framework
 npm install -g cordova
@@ -118,4 +119,8 @@ cd ~/Desktop && rm "nodejs.tgz"
 cd ~/Desktop && rm "gradle.zip"
 
 echo "----------------------------------"
-echo "Restart your Ubuntu session for installation to complete..."
+echo "Sistema ira reiniciar em 10 segundos para concluir a instalacao......"
+sleep 10
+#reinicia a maquina para concluir a instalacao
+sudo reboot
+
