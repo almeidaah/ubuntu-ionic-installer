@@ -28,11 +28,11 @@ ANDROID_SDK_X64="http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz"
 ANDROID_SDK_X86="http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz"
 
 # Latest NodeJS for x64 and x86 as of 12-19-2015
-NODE_X64="https://nodejs.org/download/release/v0.12.9/node-v0.12.9-linux-x64.tar.gz"
-NODE_X86="https://nodejs.org/download/release/v0.12.9/node-v0.12.9-linux-x86.tar.gz"
+NODE_X64="https://nodejs.org/download/release/v7.5.0/node-v7.5.0-linux-x64.tar.gz"
+NODE_X86="https://nodejs.org/download/release/v7.5.0/node-v7.5.0-linux-x86.tar.gz"
 
 # Latest Gradle as of 12-19-2015
-GRADLE_ALL="https://services.gradle.org/distributions/gradle-2.9-all.zip"
+GRADLE_ALL="https://services.gradle.org/distributions/gradle-3.5-all.zip"
 
 if [ "$LINUX_ARCH" == "x86_64" ]; then
     # Add i386 architecture
